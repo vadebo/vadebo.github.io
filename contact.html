@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <script src="static/js/bootstrap.min.js"></script>
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+    <h1 class="section-header">Contact</h1>
+    
+    <div class="contact-wrapper">
+    
+<!-- Left contact page -->
+<div class="container mt-4 mb-4">
+    <form class="mb-4 mt-4" id="contact-form">
+        <h1>Contact Us</h1>
+        <div class="form-group mb-4">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age" required>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message" name="message" required></textarea>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="question">How did you know about my page?</label>
+            <select class="form-control" name="question" id="question">
+                <option value="google">Google</option>
+                <option value="friend">From a Friend</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <button id="submit" type="submit" class="btn btn-primary">
+            <span class="send-text">Submit</span>
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
